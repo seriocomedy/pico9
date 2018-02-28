@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<!--
+		D O R P E R  P I C O - 8  P L A Y E R
+		
+		Credits
+		=======
+		Emulator: LexalOffle
+		Touch Controls: LexalOffle
+		Responsive Design: Ben Wiley
+		Tiny Script Loader: Yuriy Nemtsov
+		Getting it all working: Carver Harrison
+
+		DMCA
+		=======
+		If you do not want your game on this website, please contact me at dmca@dorper.me.
+		-->
+
+		<meta charset="utf-8">
+		<title>PICO-8</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="PICO-8 Player on Dorper">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="pico.min.css">
+	</head>
+	<body>
+		<div class="pico8_container">
+			<h1 id="loading">Fetching Game...</h1>
+			<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+		</div>
+		<div id="touch_controls">
+			<div id="controls_dpad" style="position:fixed; top:100%; left:0%; 
+				transform: translate(20px,-120px);
+				width:100px; height:100px;
+				opacity:0.5" onclick="event.preventDefault();">
+				<img src="gfx/controls_dpad.png" width="100" height="100" alt="D-Pad">
+			</div>
+			<div id="controls_m" style="position:fixed; top:100%; left:50%; 
+				transform: translate(-50%,-30px);
+				width:40px; height:20px;
+				opacity:0.3" onclick="event.preventDefault();">
+				<img src="gfx/controls_menu.png" width="40" height="20" alt="Menu">
+			</div>
+			<div id="controls_o" style="position:fixed; top:100%; left:100%; 
+				transform: translate(-70px,-120px);
+				width:50px; height:50px;
+				opacity:0.5" onclick="event.preventDefault();">
+				<img src="gfx/controls_button.png" width="50" height="50" alt="O">
+			</div>
+			<div id="controls_x" style="position:fixed; top:100%; left:100%; 
+				transform: translate(-120px,-70px);
+				width:50px; height:50px;
+				opacity:0.5" onclick="event.preventDefault();">
+				<img src="gfx/controls_button.png" width="50" height="50" alt="X">
+			</div>
+		</div>
+		<script type="text/javascript" src="pico.min.js"></script>
+	</body>
+</html>
+
