@@ -54,3 +54,7 @@ canvas#canvas {
 	text-align: center;
 	color: white;
 }
+
+img {
+	user-select: none;
+}
